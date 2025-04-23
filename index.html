@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Email Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <style>
+        #output {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            overflow-x: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">AI Email Generator</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="text-gray-600 hover:text-blue-600">Home</a></li>
+                <li><a href="#features" class="text-gray-600 hover:text-blue-600">Features</a></li>
+                <li><a href="#how-it-works" class="text-gray-600 hover:text-blue-600">How It Works</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-gray-600">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-blue-500 text-white text-center py-20">
+        <h2 class="text-4xl font-bold">Generate Professional Emails Instantly</h2>
+        <p class="mt-4 text-lg">AI-powered tool to create personalized cold emails, job applications, and client
+            proposals.</p>
+        <a href="http://localhost:8501/"
+            class="mt-6 inline-block bg-white text-blue-500 px-6 py-2 rounded-lg font-semibold shadow-lg">
+            Try It Now
+        </a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+            <img src="https://img.icons8.com/?size=100&id=48178&format=png&color=000000" class="mx-auto" alt="AI Icon">
+            <h3 class="text-xl font-bold mt-4">Smart Email Writing</h3>
+            <p class="text-gray-600 mt-2">Automatically generate professional and engaging emails in seconds.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+            <img src="https://img.icons8.com/?size=100&id=48178&format=png&color=000000" class="mx-auto"
+                alt="Personalized Icon">
+            <h3 class="text-xl font-bold mt-4">Personalized Content</h3>
+            <p class="text-gray-600 mt-2">Tailor your emails for job applications, client outreach, or networking.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+            <img src="https://img.icons8.com/?size=100&id=48178&format=png&color=000000" class="mx-auto"
+                alt="Efficiency Icon">
+            <h3 class="text-xl font-bold mt-4">Save Time & Effort</h3>
+            <p class="text-gray-600 mt-2">Let AI do the writing, so you can focus on what matters.</p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-center text-gray-800">How It Works</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-6">
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <h3 class="text-xl font-bold">1. Enter Job or Client Details</h3>
+                <p class="text-gray-600 mt-2">Provide a job post URL or client requirements.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <h3 class="text-xl font-bold">2. AI Generates an Email</h3>
+                <p class="text-gray-600 mt-2">Our AI analyzes details and writes a professional email.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <h3 class="text-xl font-bold">3. Copy, Edit & Send</h3>
+                <p class="text-gray-600 mt-2">Review the email, make any edits, and send it instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-gray-800 text-white text-center py-14">
+        <h2 class="text-3xl font-bold">Start Writing Emails Like a Pro</h2>
+        <p class="mt-4 text-lg">Try our AI-powered email generator for free!</p>
+        <a href="http://localhost:8501/"
+            class="mt-6 inline-block bg-blue-500 px-6 py-2 rounded-lg font-semibold shadow-lg">
+            Get Started Now
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-4 py-10 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Contact Us</h2>
+        <p class="text-gray-600 mt-4">Have questions? Reach out at <a href="mailto:support@emailai.com"
+                class="text-blue-500">support@emailai.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p>&copy; 2025 EmailAI. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

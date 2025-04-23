@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 350px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .tabs button {
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            background: #ddd;
+            font-size: 16px;
+            width: 50%;
+        }
+
+        .tabs button.active {
+            background: #007bff;
+            color: white;
+        }
+
+        .form-container {
+            display: none;
+        }
+
+        .form-container.active {
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="tabs">
+            <button id="login-tab" class="active" onclick="switchTab('login')">Login</button>
+            <button id="register-tab" onclick="switchTab('register')">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form-container active">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+        </div>
+
+        <!-- Register Form -->
+        <div id="register-form" class="form-container">
+            <h2>Register</h2>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Register</button>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tab) {
+            document.getElementById("login-form").classList.remove("active");
+            document.getElementById("register-form").classList.remove("active");
+            document.getElementById("login-tab").classList.remove("active");
+            document.getElementById("register-tab").classList.remove("active");
+
+            document.getElementById(tab + "-form").classList.add("active");
+            document.getElementById(tab + "-tab").classList.add("active");
+        }
+    </script>
+
+</body>
+
+</html>
