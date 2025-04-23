@@ -3,6 +3,10 @@ from langchain_community.document_loaders import WebBaseLoader
 from chains import Chain
 from portfolio import Portfolio
 from utils import clean_text
+import pysqlite3
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 def create_streamlit_app(llm, portfolio, clean_text):
     # Hide Streamlit UI elements
