@@ -1,5 +1,4 @@
 import pandas as pd
-import chromadb
 import uuid
 from chromadb.config import Settings
 
